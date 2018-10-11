@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>things being picked</title>
+</head>
+<body>
+<h1>描述丢失/捡到的宝贝</h1>
+    <form action="/see/" method="post">
+
+        <span>
+				<label for="index1">类型</label>
+			</span>
+			<select class="form-control">
+				<option>寻物</option>
+				<option>招领</option>
+
+			</select>
+
+
+        <div class="form-group">
+				<label for="index2">宝贝名称</label>
+				<input type="text" class="form-control" id="thingname" placeholder="thingname" name="thingname">
+			</div>
+
+        <div class="form-group">
+				<label for="index3">宝贝什么时候丢的</label>
+				<input type="date" class="form-control" id="find_date" placeholder="find_date" name="find_date">
+			</div>
+
+        <div class="form-group">
+				<label for="index4">宝贝在哪丢的</label>
+				<input type="text" class="form-control" id="find_place" placeholder="find_place" name="find_place">
+			</div>
+
+
+        <div class="form-group">
+				<label for="index5">宝贝什么样的</label>
+				<input type="text" class="form-control" id="description" placeholder="description" name="description">
+			</div>
+
+        <div class="form-group">
+				<label for="index6">联系我哦~</label>
+				<input type="text" class="form-control" id="contact" placeholder="contact" name="contact">
+			</div>
+
+        <input type="submit" value="提交">
+    </form>
+
+
+   <button type="button" >返回主页</button>
+
+
+</body>
+</html>

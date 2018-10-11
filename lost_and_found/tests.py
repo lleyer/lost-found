@@ -1,0 +1,7 @@
+#coding =utf-8
+import urllib2
+url="http://www.baidu.com"
+req=urllib2.Request(url)
+response=urllib2.urlopen(req)
+the_page=response.read()
+print the_page

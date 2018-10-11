@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seethings</title>
+</head>
+<body>
+    <h1>宝贝展示</h1>
+    <table border="1">
+    <tr>
+        <th>宝贝名字</th>
+        <th>信息发布人</th>
+        <th>联系方式</th>
+        <th>丢失地点</th>
+        <th>丢失时间</th>
+        <th>宝贝描述</th>
+    </tr>
+    {% for line in thing_list %}
+    <tr>
+        <td>{{line.thingname}}</td>
+        <td>{{line.announcer}}</td>
+        <td>{{line.contact}}</td>
+        <td>{{line.find_place}}</td>
+        <td>{{line.find_date}}</td>
+        <td>{{line.description}}</td>
+
+
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
